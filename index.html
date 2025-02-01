@@ -4,25 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?semt=ais_hybrid') no-repeat center center fixed;
             background-size: cover;
             color: white;
+            text-align: center;
         }
 
         .container {
-            text-align: center;
             background: rgba(0, 0, 0, 0.6);
             padding: 30px;
             border-radius: 15px;
             max-width: 600px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Email Button Styling */
+        .email-button {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: black;
+            border: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .email-button i {
+            font-size: 1.2rem;
+        }
+
+        .email-button:hover {
+            background: #0072ff;
+            color: white;
         }
 
         h1 {
@@ -38,51 +68,72 @@
             margin-bottom: 2rem;
         }
 
-        .navbar {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 15px;
+        .download-btn {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 12px 25px;
             border-radius: 8px;
+            border: 2px solid white;
+            background: transparent;
+            transition: 0.3s;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        }
+
+        .bottom-buttons {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             gap: 10px;
         }
 
-        .nav-button {
+        .small-btn {
             text-decoration: none;
-            color: white;
-            font-size: 0.9rem;
             background: white;
             color: black;
-            padding: 8px 15px;
+            font-size: 0.9rem;
+            padding: 8px 12px;
             border-radius: 5px;
             transition: 0.3s;
         }
 
-        .nav-button:hover {
-            background: #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-button:active {
-            transform: scale(0.95);
+        .small-btn:hover {
+            background: #0072ff;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <!-- Update the About link to point to your GitHub Pages URL -->
-        <a href="https://avnitapadiya.github.io/port.html/about.html" class="nav-button">About</a>
-        <a href="resume.html" class="nav-button">My Resume</a>
-        <a href="projects.html" class="nav-button">Projects</a>
-        <a href="#basic-info" class="nav-button">Basic Info</a>
-        <a href="skills.html" class="nav-button">Skills</a>
-    </div>
+
+    <!-- Email Me Button (Above the Name) -->
+    <a href="mailto:avnitapadiya@gmail.com" class="email-button">
+        <i class="fas fa-envelope"></i>
+    </a>
 
     <div class="container">
         <h1>Avni Tapadiya</h1>
         <p>Aspiring Data Scientist | B.Tech CSE (Data Science) Student @ NMIMS | Tech Enthusiast</p>
+
+        <!-- Resume Download Button -->
+        <a href="resume.pdf" class="download-btn" download>Click to Download My Resume</a>
+
+        <!-- Bottom Navigation Buttons -->
+        <div class="bottom-buttons">
+            <a href="https://avnitapadiya.github.io/port.html/about.html" class="small-btn">About</a>
+            <a href="resume.html" class="small-btn">Resume</a>
+            <a href="projects.html" class="small-btn">Projects</a>
+            <a href="skills.html" class="small-btn">Skills</a>
+        </div>
     </div>
+
 </body>
 </html>
+
