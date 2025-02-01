@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?semt=ais_hybrid') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+            background: white;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            background: #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about" class="nav-button">About</a>
+        <a href="resume.pdf" class="nav-button">My Resume</a>
+        <a href="projects.html" class="nav-button">Projects</a>
+        <a href="#basic-info" class="nav-button">Basic Info</a>
+        <a href="#skills" class="nav-button">Skills</a>
+    </div>
+
+    <div class="container">
+        <h1>Avni Tapadiya</h1>
+        <p>Aspiring Data Scientist | B.Tech CSE (Data Science) Student @ NMIMS | Tech Enthusiast</p>
+    </div>
+</body>
+</html>
+
