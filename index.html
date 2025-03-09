@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -29,32 +29,6 @@
             position: relative;
         }
 
-        /* Email Button Styling */
-        .email-button {
-            position: absolute;
-            top: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            color: black;
-            border: none;
-            padding: 15px;
-            font-size: 1.2rem;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-        }
-
-        .email-button i {
-            font-size: 1.2rem;
-        }
-
-        .email-button:hover {
-            background: #0072ff;
-            color: white;
-        }
-
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -63,7 +37,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Social Media Buttons */
         .social-buttons {
             margin-bottom: 15px;
             display: flex;
@@ -72,13 +45,22 @@
         }
 
         .social-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             text-decoration: none;
-            font-size: 1.8rem;
-            color: white;
             transition: 0.3s;
         }
 
-        .social-btn:hover {
+        .social-btn i {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .social-btn:hover i {
             color: #0072ff;
         }
 
@@ -128,35 +110,29 @@
             background: #0072ff;
             color: white;
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Email Me Button (Above the Name) -->
-    <a href="mailto:avnitapadiya@gmail.com" class="email-button">
-        <i class="fas fa-envelope"></i>
-    </a>
-
     <div class="container">
         <h1>Avni Tapadiya</h1>
 
-        <!-- Social Media Buttons -->
         <div class="social-buttons">
+            <a href="mailto:tapadiyaavni@gmail.com" class="social-btn">
+                <i class="fas fa-envelope"></i>
+            </a>
             <a href="https://github.com/avnitapadiya" target="_blank" class="social-btn">
-                <i class="fab fa-github"></i>
+                <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/avnitapadiya" target="_blank" class="social-btn">
-                <i class="fab fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>
 
         <p>Aspiring Full Stack Developer & Data Analyst | B.Tech CSE (Data Science) Student @ NMIMS | Tech Enthusiast</p>
 
-        <!-- Resume Download Button -->
         <a href="resume.pdf" class="download-btn" download="Avni_Tapadiya_Resume.pdf">Click to Download My Resume</a>
 
-        <!-- Bottom Navigation Buttons -->
         <div class="bottom-buttons">
             <a href="https://avnitapadiya.github.io/port.html/about.html" class="small-btn">About</a>
             <a href="resume.html" class="small-btn">Resume</a>
