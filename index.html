@@ -63,6 +63,25 @@
             -webkit-text-fill-color: transparent;
         }
 
+        /* Social Media Buttons */
+        .social-buttons {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-btn {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            color: #0072ff;
+        }
+
         p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
@@ -109,6 +128,7 @@
             background: #0072ff;
             color: white;
         }
+
     </style>
 </head>
 <body>
@@ -120,7 +140,18 @@
 
     <div class="container">
         <h1>Avni Tapadiya</h1>
-        <p>Aspiring Full Stack Developer & Data Analyst| B.Tech CSE (Data Science) Student @ NMIMS | Tech Enthusiast</p>
+
+        <!-- Social Media Buttons -->
+        <div class="social-buttons">
+            <a href="https://github.com/avnitapadiya" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/avnitapadiya" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <p>Aspiring Full Stack Developer & Data Analyst | B.Tech CSE (Data Science) Student @ NMIMS | Tech Enthusiast</p>
 
         <!-- Resume Download Button -->
         <a href="resume.pdf" class="download-btn" download="Avni_Tapadiya_Resume.pdf">Click to Download My Resume</a>
