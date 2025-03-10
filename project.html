@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?semt=ais_hybrid') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        /* General button styling */
+        .project {
+            width: 90%; /* Increased width */
+            padding: 80px; /* Increased height */
+            margin: 20px auto; /* Centering */
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            font-size: 20px; /* Increased font size */
+            font-weight: bold;
+            border: none;
+            text-align: center;
+            transition: transform 0.3s;
+            display: block;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: white;
+        }
+        /* Background images and text colors */
+        .notes-password {
+            background: url('notes_password_background.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .medical-image {
+            background: url('medical_app_background.png') no-repeat center center;
+            background-size: cover;
+            color: black;
+        }
+        .gold-price {
+            background: url('Gold_price_background.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .hr-analytics {
+            background: url('HR_analytics_background.png') no-repeat center center;
+            background-size: cover;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <button class="project notes-password" onclick="location.href='#'">
+            <h2>Notes-Password-Manager</h2>
+            <p>A secure C++ app for managing notes and passwords.</p>
+        </button>
+
+        <button class="project medical-image" onclick="location.href='#'">
+            <h2>Medical-Image-Detection-App</h2>
+            <p>A Python-based app for detecting medical images.</p>
+        </button>
+
+        <button class="project gold-price" onclick="location.href='#'">
+            <h2>Gold-Price-Prediction-2025</h2>
+            <p>Using Holt’s winter forecasting method in Jupyter Notebook.</p>
+        </button>
+
+        <button class="project hr-analytics" onclick="location.href='#'">
+            <h2>HR-Analytics</h2>
+            <p>Analyzing HR data for better decision-making.</p>
+        </button>
+    </div>
+</body>
+</html>
